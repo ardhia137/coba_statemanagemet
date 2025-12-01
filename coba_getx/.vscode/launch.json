@@ -1,0 +1,21 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flutter Dev",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=API_BASE_URL=http://172.120.40.160:8080/rest-api-tomcat/api/ref-notif"
+      ]
+    },
+    {
+      "name": "Flutter Production",
+      "request": "launch",
+      "type": "dart",
+      "args": [
+        "--dart-define=API_BASE_URL=http://172.120.40.160:8080/rest-api-tomcat/api/ref-notif"
+      ]
+    }
+  ]
+}
