@@ -6,7 +6,7 @@
       "request": "launch",
       "type": "dart",
       "args": [
-        "--dart-define=API_BASE_URL=http://172.120.40.160:8080/rest-api-tomcat/api/ref-notif"
+        "--dart-define=API_BASE_URL=http://192.168.1.15:8080/rest-api-tomcat/api/ref-notif"
       ]
     },
     {

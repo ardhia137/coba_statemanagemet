@@ -14,9 +14,13 @@ class RefJnsNotifNotifier extends _$RefJnsNotifNotifier {
     return await api.fetchRefJnsNotifs();
   }
 
-  Future<void> refresh() async {
-    state = const AsyncLoading();
-    state = await AsyncValue.guard(() => api.fetchRefJnsNotifs());
+  // Future<void> refresh() async {
+  //   state = const AsyncLoading();
+  //   state = await AsyncValue.guard(() => api.fetchRefJnsNotifs());
+  // }
+
+  String appBar() {
+    return "RefJnsNotif Riverpod";
   }
 
   Future<void> saveAndPop(RefJnsNotif p, BuildContext context) async {
@@ -25,13 +29,13 @@ class RefJnsNotifNotifier extends _$RefJnsNotifNotifier {
     } else {
       await api.updateRefJnsNotif(p);
     }
-    await refresh();
+    // await refresh();
     Navigator.pop(context, true);
   }
 
 
   Future<void> remove(int id) async {
     await api.deleteRefJnsNotif(id);
-    await refresh();
+    // await refresh();
   }
 }
